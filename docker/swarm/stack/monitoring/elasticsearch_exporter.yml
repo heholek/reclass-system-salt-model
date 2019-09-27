@@ -12,7 +12,7 @@ parameters:
                 encrypted: 1
           service:
             elasticsearch_exporter:
-              command: --es-cluster ${_param:fluentd_elasticsearch_scheme}://${_param:stacklight_log_address}:9200 --nodes-stats-disable --cluster-health-disable --indices-stats-disable
+              command: --es-cluster ${_param:fluentd_elasticsearch_scheme}://${_param:stacklight_log_address}:9200 --nodes-stats-disable --cluster-health-disable --indices-stats-disable --ca-certs /etc/ssl/certs/ca-certificates.crt
               networks:
                 - monitoring
               deploy:
