@@ -24,3 +24,9 @@ parameters:
             SALT_MASTER_URL:
               type: string
               default: "${_param:jenkins_salt_api_url}"
+            RESTORE_SALTMASTER_AND_MAAS: #TODO: Salt-master and MaaS backup should be separated. See https://mirantis.jira.com/browse/PROD-33616 for more info.
+              type: boolean
+              default: 'true'
+            RESTORE_DOGTAG:
+              type: boolean
+              default: 'true'
