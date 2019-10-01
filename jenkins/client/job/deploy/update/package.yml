@@ -31,6 +31,10 @@ parameters:
               type: string
               default: "*"
               description: Salt compound target to match nodes to be updated [*, G@osfamily:debian].
+            ALLOW_DEPENDENCY_UPDATE:
+              type: boolean
+              default: 'false'
+              description: "Allow to install new packages which come as dependencies for updated packages."
             BATCH_SIZE:
               type: string
               default: ''
