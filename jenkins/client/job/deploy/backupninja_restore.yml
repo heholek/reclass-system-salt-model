@@ -6,7 +6,7 @@ parameters:
         backupninja_restore:
           type: workflow-scm
           name: backupninja-restore
-          display_name: "Backupninja restore salt-master/MaaS backup"
+          display_name: "Backupninja restore pipeline"
           discard:
             build:
               keep_num: 50
