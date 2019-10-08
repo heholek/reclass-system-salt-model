@@ -39,7 +39,7 @@ parameters:
     salt_control_size_cpu_openstack_baremetal: 4
     salt_control_size_ram_openstack_baremetal: 4096
     salt_control_size_disk_profile_openstack_baremetal: small
-    salt_control_size_net_profile_openstack_baremetal: default
+    salt_control_size_net_profile_openstack_baremetal: baremetal
   salt:
     control:
       size:
