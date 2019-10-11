@@ -65,3 +65,4 @@ parameters:
         - ipmitool-socat
         - no-console
       pxe_append_params: 'nofb nomodeset vga=normal ipa-insecure=1'
+      default_boot_option: local
