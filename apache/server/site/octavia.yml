@@ -1,0 +1,47 @@
+parameters:
+  _param:
+    apache_ssl:
+      enabled: false
+    apache_octavia_api_ssl: ${_param:apache_ssl}
+    apache_octavia_api_address: 0.0.0.0
+    apache_octavia_api_host: ${linux:network:fqdn}
+  octavia:
+    server:
+      service_name: apache2
+  apache:
+    server:
+      enabled: true
+      default_mpm: event
+      modules:
+        - wsgi
+      site:
+        octavia_api:
+          enabled: false
+          available: true
+          type: wsgi
+          name: octavia_api
+          ssl: ${_param:apache_octavia_api_ssl}
+          wsgi:
+            daemon_process: octavia-wsgi
+            processes: 5
+            threads: 1
+            user: octavia
+            group: octavia
+            display_name: '%{GROUP}'
+            script_alias: '/ /usr/bin/octavia-wsgi'
+            application_group: '%{GLOBAL}'
+            authorization: 'On'
+          limits:
+            request_body: 114688
+          host:
+            address: ${_param:apache_octavia_api_address}
+            name: ${_param:apache_octavia_api_host}
+            port: 9876
+          log:
+            custom:
+              format: ${_param:apache_site_openstack_placement_log_format}
+              file: '/var/log/apache2/octavia_api_access.log'
+            error:
+              enabled: true
+              format: '%M'
+              file: '/var/log/apache2/octavia_api_error.log'
