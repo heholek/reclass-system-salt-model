@@ -1,12 +1,26 @@
 parameters:
+  _param:
+    nginx_proxy_prometheus_alertmanager_user: alertmanager
+    # default password is set for backward compatiblity
+    nginx_proxy_prometheus_alertmanager_password: ${_param:keepalived_prometheus_vip_password}
+    nginx_proxy_prometheus_alertmanager_htpasswd_file: .htpasswd_prometheus_alertmanager
   nginx:
     server:
       enabled: true
+      user:
+        prometheus_alertmanager:
+          enabled: true
+          name: ${_param:nginx_proxy_prometheus_alertmanager_user}
+          password: ${_param:nginx_proxy_prometheus_alertmanager_password}
+          htpasswd: ${_param:nginx_proxy_prometheus_alertmanager_htpasswd_file}
       site:
         nginx_proxy_prometheus_alertmanager:
           enabled: true
           type: nginx_proxy
           name: prometheus_alertmanager
+          auth:
+            engine: basic
+            htpasswd: ${_param:nginx_proxy_prometheus_alertmanager_htpasswd_file}
           proxy:
             host: ${_param:prometheus_control_address}
             port: 15011

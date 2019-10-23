@@ -1,12 +1,26 @@
 parameters:
+  _param:
+    nginx_proxy_prometheus_server_user: prometheus
+    # default password is set for backward compatiblity
+    nginx_proxy_prometheus_server_password: ${_param:keepalived_prometheus_vip_password}
+    nginx_proxy_prometheus_server_htpasswd_file: .htpasswd_prometheus_server
   nginx:
     server:
       enabled: true
+      user:
+        prometheus_server:
+          enabled: true
+          name: ${_param:nginx_proxy_prometheus_server_user}
+          password: ${_param:nginx_proxy_prometheus_server_password}
+          htpasswd: ${_param:nginx_proxy_prometheus_server_htpasswd_file}
       site:
         nginx_proxy_prometheus_server:
           enabled: true
           type: nginx_proxy
           name: prometheus_server
+          auth:
+            engine: basic
+            htpasswd: ${_param:nginx_proxy_prometheus_server_htpasswd_file}
           proxy:
             host: ${_param:prometheus_control_address}
             port: 15010
