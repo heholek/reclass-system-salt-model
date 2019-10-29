@@ -12,8 +12,8 @@ parameters:
     ###
     # phpldapadmin:0.6.12
     docker_image_phpldapadmin: "${_param:mcp_docker_registry}/mirantis/cicd/phpldapadmin:2019.2.5"
-    # gerrit:2.13.6
-    docker_image_gerrit: "${_param:mcp_docker_registry}/mirantis/cicd/gerrit:2019.2.5"
+    # gerrit:2.15.17
+    docker_image_gerrit: "${_param:mcp_docker_registry}/mirantis/cicd/gerrit:2019.2.7"
     # mysql:5.6
     docker_image_mysql: "${_param:mcp_docker_registry}/mirantis/cicd/mysql:${_param:mcp_version}"
     # jenkins:2.150.3
