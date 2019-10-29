@@ -57,6 +57,7 @@ parameters:
           log:
             custom:
               format: ${_param:apache_site_openstack_horizon_log_format}
+              file: '/var/log/apache2/openstack_dashboard_access.log'
             error:
               enabled: true
               level: debug
