@@ -1,4 +1,5 @@
 classes:
 - system.openssh.server.team.members.deprecated.akiseleva
+- system.openssh.server.team.members.deprecated.mvollman
 - system.openssh.server.team.members.mlos
-- system.openssh.server.team.members.mvollman
+- system.openssh.server.team.members.mjedynski
