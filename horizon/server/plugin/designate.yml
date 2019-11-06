@@ -1,0 +1,16 @@
+parameters:
+  horizon:
+    server:
+      plugin:
+        designate-dashboard:
+          source:
+            engine: pkg
+            name: python-designate-dashboard
+      policy:
+        dns:
+          enabled: true
+          source: 'mine'
+          target_type: 'compound'
+          host: 'I@designate:server:role:primary'
+          grain_name: ${_param:horizon_dashboard_designate_grain}
+          name: ${_param:horizon_dashboard_designate_file}
