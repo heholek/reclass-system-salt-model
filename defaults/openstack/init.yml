@@ -137,6 +137,7 @@ parameters:
     designate_old_version: ${_param:openstack_old_version}
     designate_version: ${_param:openstack_version}
     designate_upgrade_enabled: ${_param:openstack_upgrade_enabled}
+    designate_export_policy_grains: true
     # Ironic
     mysql_ironic_username: ironic
     keystone_ironic_username: ironic
@@ -227,6 +228,9 @@ parameters:
     horizon_old_version: ${_param:openstack_old_version}
     horizon_version: ${_param:openstack_version}
     horizon_upgrade_enabled: ${_param:openstack_upgrade_enabled}
+    ## Dashboards
+    horizon_dashboard_designate_file: designate_policy.json
+    horizon_dashboard_designate_grain: designate_policy
     # Octavia
     mysql_octavia_username: octavia
     keystone_octavia_username: octavia
