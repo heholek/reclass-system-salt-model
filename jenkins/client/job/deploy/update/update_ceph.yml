@@ -29,3 +29,7 @@ parameters:
               type: string
               default: "salt"
               description: Credentials to the Salt API.
+            CLUSTER_FLAGS:
+              type: string
+              default: ''
+              description: Flags to be aplied before pipeline and after pipeline (comma-separated list)
