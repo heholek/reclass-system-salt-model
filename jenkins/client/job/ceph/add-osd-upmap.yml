@@ -30,3 +30,7 @@ parameters:
               type: string
               description: OSD HOST that will be added to Ceph cluster (rgw04*)
               default: 'osd*'
+            CLUSTER_FLAGS:
+              type: string
+              default: ''
+              description: Flags to be aplied before pipeline and after pipeline (comma-separated list)
