@@ -43,3 +43,6 @@ parameters:
               type: string
               default: '1'
               description: Number of selected nodes to live apply compute update.
+            ASK_CONFIRMATION:
+              type: boolean
+              default: 'true'
