@@ -14,6 +14,8 @@ parameters:
       bind:
         address: ${_param:horizon_server_bind_address}
         port: 8078
+      cache:
+        backend: 'django.core.cache.backends.memcached.MemcachedCache'
       plugin: {}
       session:
         engine: "cache"

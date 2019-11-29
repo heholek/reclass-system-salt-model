@@ -15,6 +15,8 @@ parameters:
       branding: ${_param:horizon_site_branding}
       bind:
         port: 8078
+      cache:
+        backend: 'django.core.cache.backends.memcached.MemcachedCache'
       plugin: {}
       session:
         engine: "cache"
