@@ -15,5 +15,5 @@ parameters:
         psvimbersky:
           enabled: true
           public_keys:
-          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCnsI2H2xgNFttWvGaIa7UdXtgAnlGMpin1/sBufx/bYkDMU2r0xGDjIBbUNWc4/OSKhpDyJiwxT5qiln07uFDBw0PtHUlJYHpJgS9xE6PERZPEiyQqrmbUVdqX9bIimweMH8kJIXjKgut+pc+GLUs5SyUlkjlHbKuYoYo52jAx+ldAslKK0P/aA1msjzGpoDRSvFChew7FHs9sH0GTgX865DoqCzqulNjHiGUrziBxwEAdUVjNDfxFHROm6kgdFU7ipgNQTHB7NvEI/VfZFlcuZ9IWZQhLQiw1jSxs4zAxOYJWrELPUqhPYE5yB5Y9j8iP4b0xIKhwoWkxQxdYuaLB
+          - key: ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAB7d4myqkDDrNJsXP3yfs4yN+uXcj40Bpc7FFA+sdnwwBt8feBYdpathIixYh9tQkUKX5oKbL33O7SdU+nh+jpQLQDsVUEfKnv0q1hRQPe6xiUgvQHkekN496FuPp7E7r7xI0g37bFF7XUFIcsm3o9r0loLnnJkeHMvyiB82d2F0Xdzvw==
           user: ${linux:system:user:psvimbersky}
