@@ -26,6 +26,7 @@ parameters:
       domain_id: ${_param:designate_domain_id}
       version: ${_param:designate_version}
       role: ${_param:openstack_node_role}
+      export_policy_grains: ${_param:designate_export_policy_grains}
       admin_api:
         enabled: ${_param:designate_admin_api_enabled}
         enabled_extensions_admin: quotas
