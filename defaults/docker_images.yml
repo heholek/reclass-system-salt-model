@@ -3,43 +3,43 @@ parameters:
     # CI\CD
     docker_image_compose: "${_param:mcp_docker_registry}/mirantis/external/docker/compose:1.17.1"
     # 2.6.2 version, from 12/18/2108, differ from latest 2.6.2 upstream - update next cycle
-    docker_image_registry:   "${_param:mcp_docker_registry}/mirantis/external/registry:2019.2.0"
-    docker_image_visualizer: "${_param:mcp_docker_registry}/mirantis/external/visualizer:2019.2.0"
+    docker_image_registry:   "${_param:mcp_docker_registry}/mirantis/external/registry:2019.2.6"
+    docker_image_visualizer: "${_param:mcp_docker_registry}/mirantis/external/visualizer:2019.2.6"
     docker_image_openldap: "${_param:mcp_docker_registry}/mirantis/external/osixia/openldap:1.2.2"
     docker_image_postgresql: "${_param:mcp_docker_registry}/mirantis/external/library/postgres:9.6.10"
     # 3.4.13, from Feb 15, differ from 3.4.13 upstream verison, from March 14 - update next cycle
-    docker_image_mongodb: "${_param:mcp_docker_registry}/mirantis/external/mongo:2019.2.0"
+    docker_image_mongodb: "${_param:mcp_docker_registry}/mirantis/external/mongo:2019.2.6"
     ###
     # phpldapadmin:0.6.12
     docker_image_phpldapadmin: "${_param:mcp_docker_registry}/mirantis/cicd/phpldapadmin:2019.2.5"
     # gerrit:2.15.17
     docker_image_gerrit: "${_param:mcp_docker_registry}/mirantis/cicd/gerrit:2019.2.7"
     # mysql:5.6
-    docker_image_mysql: "${_param:mcp_docker_registry}/mirantis/cicd/mysql:2019.2.0"
+    docker_image_mysql: "${_param:mcp_docker_registry}/mirantis/cicd/mysql:2019.2.6"
     # jenkins:2.150.3
     docker_image_jenkins: "${_param:mcp_docker_registry}/mirantis/cicd/jenkins:2019.2.5"
-    docker_image_jenkins_jnlp_slave: "${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:2019.2.0"
+    docker_image_jenkins_jnlp_slave: "${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:2019.2.6"
     # TODO: fix tag
     docker_image_jenkins_ssh_slave: "${_param:mcp_docker_registry}/mirantis/cicd/ssh-slave:2019.2.5"
     # model-generator
-    docker_image_operations_api: "${_param:mcp_docker_registry}/mirantis/model-generator/operations-api:2019.2.0"
-    docker_image_operations_ui: "${_param:mcp_docker_registry}/mirantis/model-generator/operations-ui:2019.2.0"
+    docker_image_operations_api: "${_param:mcp_docker_registry}/mirantis/model-generator/operations-api:2019.2.6"
+    docker_image_operations_ui: "${_param:mcp_docker_registry}/mirantis/model-generator/operations-ui:2019.2.6"
     # OpenContrail
     opencontrail_docker_image_tag: "2019.2.7"
     # stacklight
     # 6.5.0 version, from 11/29/2018, differ from latest upstream 6.5.0 - update next cycle
-    docker_image_alerta: "${_param:mcp_docker_registry}/mirantis/external/alerta-web:2019.2.0"
+    docker_image_alerta: "${_param:mcp_docker_registry}/mirantis/external/alerta-web:2019.2.6"
     docker_image_alertmanager: "${_param:mcp_docker_registry}/openstack-docker/alertmanager:2019.2.4"
-    docker_image_grafana: "${_param:mcp_docker_registry}/openstack-docker/grafana:2019.2.0"
+    docker_image_grafana: "${_param:mcp_docker_registry}/openstack-docker/grafana:2019.2.6"
     docker_image_prometheus_es_exporter: "${_param:mcp_docker_registry}/openstack-docker/prometheus-es-exporter:2019.2.6"
     docker_image_prometheus: "${_param:mcp_docker_registry}/openstack-docker/prometheus:2019.2.6"
     docker_image_prometheus_gainsight: "${_param:mcp_docker_registry}/openstack-docker/gainsight:2019.2.4"
-    docker_image_prometheus_gainsight_elasticsearch: "${_param:mcp_docker_registry}/openstack-docker/gainsight_elasticsearch:2019.2.0"
+    docker_image_prometheus_gainsight_elasticsearch: "${_param:mcp_docker_registry}/openstack-docker/gainsight_elasticsearch:2019.2.6"
     docker_image_prometheus_relay: "${_param:mcp_docker_registry}/openstack-docker/prometheus-relay:2019.2.5"
-    docker_image_pushgateway: "${_param:mcp_docker_registry}/openstack-docker/pushgateway:2019.2.0"
+    docker_image_pushgateway: "${_param:mcp_docker_registry}/openstack-docker/pushgateway:2019.2.6"
     docker_image_remote_agent: "${_param:mcp_docker_registry}/openstack-docker/telegraf:2019.2.7"
-    docker_image_remote_collector: "${_param:mcp_docker_registry}/openstack-docker/heka:2019.2.0"
-    docker_image_remote_storage_adapter: "${_param:mcp_docker_registry}/openstack-docker/remote_storage_adapter:2019.2.0"
+    docker_image_remote_collector: "${_param:mcp_docker_registry}/openstack-docker/heka:2019.2.6"
+    docker_image_remote_storage_adapter: "${_param:mcp_docker_registry}/openstack-docker/remote_storage_adapter:2019.2.6"
     docker_image_sf_notifier: "${_param:mcp_docker_registry}/openstack-docker/sf_notifier:2019.2.4"
     ##
     docker_image_cockroachdb: "${_param:mcp_docker_registry}/mirantis/external/cockroach/cockroach:v2.1.1"
@@ -54,9 +54,9 @@ parameters:
     docker_image_cvp_xrally: "${_param:mcp_docker_registry}/mirantis/external/xrally/xrally-openstack:0.11.2"
     # aptly
     docker_image_aptly:
-      base: "${_param:mcp_docker_registry}/mirantis/cicd/aptly:2019.2.0"
-      public: "${_param:mcp_docker_registry}/mirantis/cicd/aptly-public:2019.2.0"
-      publisher: "${_param:mcp_docker_registry}/mirantis/cicd/aptly-publisher:2019.2.0"
+      base: "${_param:mcp_docker_registry}/mirantis/cicd/aptly:2019.2.6"
+      public: "${_param:mcp_docker_registry}/mirantis/cicd/aptly-public:2019.2.6"
+      publisher: "${_param:mcp_docker_registry}/mirantis/cicd/aptly-publisher:2019.2.6"
 
     # List of images, to be placed into offline image, during separate image build process
     # WARNING: registry|target_registry and names - must be exactly same as list above!
@@ -67,10 +67,10 @@ parameters:
          # CI/CD
         - registry: ${_param:mcp_docker_registry}/mirantis/external
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external
-          name: registry:2019.2.0
+          name: registry:2019.2.6
         - registry: ${_param:mcp_docker_registry}/mirantis/external
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external
-          name: visualizer:2019.2.0
+          name: visualizer:2019.2.6
         - registry: ${_param:mcp_docker_registry}/mirantis/external/docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external/docker
           name: compose:1.17.1
@@ -86,17 +86,17 @@ parameters:
 
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: aptly:2019.2.0
+          name: aptly:2019.2.6
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: aptly-public:2019.2.0
+          name: aptly-public:2019.2.6
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: aptly-publisher:2019.2.0
+          name: aptly-publisher:2019.2.6
 
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: jnlp-slave:2019.2.0
+          name: jnlp-slave:2019.2.6
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
           name: ssh-slave:2019.2.5
@@ -112,10 +112,10 @@ parameters:
           name: alertmanager:2019.2.4
         - registry: ${_param:mcp_docker_registry}/mirantis/external
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external
-          name: alerta-web:2019.2.0
+          name: alerta-web:2019.2.6
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
-          name: pushgateway:2019.2.0
+          name: pushgateway:2019.2.6
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
           name: prometheus:2019.2.6
@@ -127,22 +127,22 @@ parameters:
           name: telegraf:2019.2.7
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
-          name: remote_storage_adapter:2019.2.0
+          name: remote_storage_adapter:2019.2.6
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
           name: prometheus-relay:2019.2.5
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
-          name: grafana:2019.2.0
+          name: grafana:2019.2.6
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
-          name: heka:2019.2.0
+          name: heka:2019.2.6
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
           name: sf_notifier:2019.2.4
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
-          name: gainsight_elasticsearch:2019.2.0
+          name: gainsight_elasticsearch:2019.2.6
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
           name: prometheus-es-exporter:2019.2.6
@@ -180,7 +180,7 @@ parameters:
           #
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: mysql:2019.2.0
+          name: mysql:2019.2.6
         - registry: ${_param:mcp_docker_registry}/mirantis/external
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external
-          name: mongo:2019.2.0
+          name: mongo:2019.2.6
