@@ -6,26 +6,26 @@ parameters:
     default_local_mirrror_content:
       linux_system_file:
         ubuntu-16-04-x64.qcow2:
-          name: /srv/http/images.mirantis.com/ubuntu-16-04-x64-mcp${_param:mcp_version}.qcow2
-          source: ${_param:mcp_static_images_url}/ubuntu-16-04-x64-mcp${_param:mcp_version}.qcow2
-          hash: ${_param:mcp_static_images_url}/ubuntu-16-04-x64-mcp${_param:mcp_version}.qcow2.md5
+          name: /srv/http/images.mirantis.com/ubuntu-16-04-x64-mcp2019.2.0.qcow2
+          source: ${_param:mcp_static_images_url}/ubuntu-16-04-x64-mcp2019.2.0.qcow2
+          hash: ${_param:mcp_static_images_url}/ubuntu-16-04-x64-mcp2019.2.0.qcow2.md5
         ubuntu-16-04-x64.qcow2.md5:
-          name: /srv/http/images.mirantis.com/ubuntu-16-04-x64-mcp${_param:mcp_version}.qcow2.md5
-          source: ${_param:mcp_static_images_url}/ubuntu-16-04-x64-mcp${_param:mcp_version}.qcow2.md5
+          name: /srv/http/images.mirantis.com/ubuntu-16-04-x64-mcp2019.2.0.qcow2.md5
+          source: ${_param:mcp_static_images_url}/ubuntu-16-04-x64-mcp2019.2.0.qcow2.md5
         amphora-x64-haproxy-pike.qcow2:
-          source: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/${_param:mcp_version}/pike/amphora-x64-haproxy.qcow2
-          name: /srv/http/artifactory.mirantis.com/artifactory/binary-prod-local/mirantis/openstack/octavia/images/${_param:mcp_version}/pike/amphora-x64-haproxy.qcow2
-          hash: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/${_param:mcp_version}/pike/amphora-x64-haproxy.qcow2.md5
+          source: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/2019.2.6/pike/amphora-x64-haproxy.qcow2
+          name: /srv/http/artifactory.mirantis.com/artifactory/binary-prod-local/mirantis/openstack/octavia/images/2019.2.6/pike/amphora-x64-haproxy.qcow2
+          hash: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/2019.2.6/pike/amphora-x64-haproxy.qcow2.md5
         amphora-x64-haproxy-pike.qcow2.md5:
-          source: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/${_param:mcp_version}/pike/amphora-x64-haproxy.qcow2.md5
-          name: /srv/http/artifactory.mirantis.com/artifactory/binary-prod-local/mirantis/openstack/octavia/images/${_param:mcp_version}/pike/amphora-x64-haproxy.qcow2.md5
+          source: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/2019.2.6/pike/amphora-x64-haproxy.qcow2.md5
+          name: /srv/http/artifactory.mirantis.com/artifactory/binary-prod-local/mirantis/openstack/octavia/images/2019.2.6/pike/amphora-x64-haproxy.qcow2.md5
         amphora-x64-haproxy-queens.qcow2:
-          source: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/${_param:mcp_version}/queens/amphora-x64-haproxy.qcow2
-          name: /srv/http/artifactory.mirantis.com/artifactory/binary-prod-local/mirantis/openstack/octavia/images/${_param:mcp_version}/queens/amphora-x64-haproxy.qcow2
-          hash: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/${_param:mcp_version}/queens/amphora-x64-haproxy.qcow2.md5
+          source: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/2019.2.6/queens/amphora-x64-haproxy.qcow2
+          name: /srv/http/artifactory.mirantis.com/artifactory/binary-prod-local/mirantis/openstack/octavia/images/2019.2.6/queens/amphora-x64-haproxy.qcow2
+          hash: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/2019.2.6/queens/amphora-x64-haproxy.qcow2.md5
         amphora-x64-haproxy-queens.qcow2.md5:
-          source: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/${_param:mcp_version}/queens/amphora-x64-haproxy.qcow2.md5
-          name: /srv/http/artifactory.mirantis.com/artifactory/binary-prod-local/mirantis/openstack/octavia/images/${_param:mcp_version}/queens/amphora-x64-haproxy.qcow2.md5
+          source: ${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/2019.2.6/queens/amphora-x64-haproxy.qcow2.md5
+          name: /srv/http/artifactory.mirantis.com/artifactory/binary-prod-local/mirantis/openstack/octavia/images/2019.2.6/queens/amphora-x64-haproxy.qcow2.md5
         cirros-0.4.0-x86_64-disk.img:
           source: ${_param:mcp_binary_registry}/mirantis/external/images/cirros/0.4.0/cirros-0.4.0-x86_64-disk.img
           name: /srv/http/artifactory.mirantis.com/artifactory/binary-prod-local/mirantis/external/images/cirros/0.4.0/cirros-0.4.0-x86_64-disk.img

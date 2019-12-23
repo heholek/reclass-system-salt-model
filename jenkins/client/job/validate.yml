@@ -214,7 +214,25 @@ parameters:
               default: |
                 envs:
                   - tests_set=''
-              description: "YAML context with additional parameters, e.g. skipped_nodes=nal01.local.com,ntw01.local.com or tests_set='tests/test_mtu.py'"
+                override_config:
+                  skipped_nodes: []
+              description: |
+                YAML context with additional parameters. 'envs' key is for environment variables, 'override_config' key is for overriding the global config in YAML format (good for nested parameters). Example:
+                envs:
+                - tests_set='tests/test_mtu.py'
+                override_config:
+                  drivetrain_version: 2019.2.0
+                  skipped_groups:
+                  - log
+                  test_duplicate_ips:
+                    skipped_ifaces:
+                    - lo
+                    - virbr0
+                    - docker_gwbridge
+                    - docker0
+                  test_packages:
+                    skipped_packages: []
+                    skip_test: 'false'
         cvp-func:
           type: workflow-scm
           name: cvp-func
@@ -541,6 +559,10 @@ parameters:
               type: string
               default: "salt"
               description: Credentials to the Salt API.
+            SLAVE_NODE:
+              type: string
+              default: "slave01"
+              description: Label or name of node to start the Shaker server (should be one of cicd nodes and should have the IP address of SHAKER_SERVER_ENDPOINT).
             SHAKER_PARAMS:
               type: text
               default:  |
@@ -561,8 +583,8 @@ parameters:
                   #  - SHAKER_EXTERNAL_NET='public'
               description: |
                   YAML context with parameters for running Shaker tests, where
-                  "SHAKER_SERVER_ENDPOINT" - Address for Shaker server connections (host:port). Should be accessible
-                  from tenant's VM network (usually equals to public address of cicd node)
+                  "SHAKER_SERVER_ENDPOINT" - Address for Shaker server connections (host:port). The IP address of SLAVE_NODE with the port. Should be accessible
+                  from tenant's VM network (floating network)
                   "SHAKER_SCENARIOS" - Path to shaker scenarios in the cvp-shaker docker image
                   (can be directory or specific file). Main categories are
                     scenarios/essential/l2

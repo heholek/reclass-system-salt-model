@@ -137,6 +137,7 @@ parameters:
     designate_old_version: ${_param:openstack_old_version}
     designate_version: ${_param:openstack_version}
     designate_upgrade_enabled: ${_param:openstack_upgrade_enabled}
+    designate_export_policy_grains: true
     # Ironic
     mysql_ironic_username: ironic
     keystone_ironic_username: ironic
@@ -227,6 +228,9 @@ parameters:
     horizon_old_version: ${_param:openstack_old_version}
     horizon_version: ${_param:openstack_version}
     horizon_upgrade_enabled: ${_param:openstack_upgrade_enabled}
+    ## Dashboards
+    horizon_dashboard_designate_file: designate_policy.json
+    horizon_dashboard_designate_grain: designate_policy
     # Octavia
     mysql_octavia_username: octavia
     keystone_octavia_username: octavia
@@ -235,7 +239,7 @@ parameters:
     octavia_health_manager_node03_address: 192.168.10.12
     #
     amphora_image_name: amphora-x64-haproxy
-    amphora_image_url: "${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/${_param:mcp_version}/${_param:openstack_version}/amphora-x64-haproxy.qcow2"
+    amphora_image_url: "${_param:mcp_binary_registry}/mirantis/openstack/octavia/images/2019.2.6/${_param:openstack_version}/amphora-x64-haproxy.qcow2"
 
     glance_image_cirros_name: 'TestCirros-0.4.0'
     glance_image_cirros_location: "${_param:mcp_binary_registry}/mirantis/external/images/cirros/0.4.0/cirros-0.4.0-x86_64-disk.img"
