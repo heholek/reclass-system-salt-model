@@ -1,6 +1,7 @@
 classes:
 - system.openssh.server.team.members.dkalashnik
 - system.openssh.server.team.members.isvetlov
+- system.openssh.server.team.members.kdziekonski
 - system.openssh.server.team.members.mmatuszkowiak
 - system.openssh.server.team.members.mkobus
 - system.openssh.server.team.members.sbanka
