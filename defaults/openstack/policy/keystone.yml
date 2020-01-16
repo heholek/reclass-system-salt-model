@@ -1,0 +1,6 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  keystone:
+    server:
+      policy: ${_param:keystone_default_policy_${_param:openstack_version}}

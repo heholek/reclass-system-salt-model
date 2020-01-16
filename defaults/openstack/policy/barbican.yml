@@ -1,0 +1,6 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  barbican:
+    server:
+      policy: ${_param:barbican_default_policy_${_param:openstack_version}}
