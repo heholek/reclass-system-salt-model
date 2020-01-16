@@ -1,0 +1,6 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  glance:
+    server:
+      policy: ${_param:glance_default_policy_${_param:openstack_version}}

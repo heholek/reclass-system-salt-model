@@ -1,0 +1,6 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  manila:
+    api:
+      policy: ${_param:manila_default_policy_${_param:openstack_version}}

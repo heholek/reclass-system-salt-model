@@ -1,3 +1,5 @@
+classes:
+- system.defaults.openstack.policy.all
 parameters:
   horizon:
     server:
@@ -8,10 +10,10 @@ parameters:
             name: python-manila-ui
       policy:
         share:
-          source: file
-          name: manila_policy.json
           enabled: true
+          source: pillar
+          pillar: ${_param:manila_default_policy_${_param:openstack_version}}
         sharev2:
-          source: file
-          name: manila_policy.json
           enabled: true
+          source: pillar
+          pillar: ${_param:manila_default_policy_${_param:openstack_version}}
