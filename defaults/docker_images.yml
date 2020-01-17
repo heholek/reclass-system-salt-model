@@ -17,7 +17,7 @@ parameters:
     # mysql:5.6
     docker_image_mysql: "${_param:mcp_docker_registry}/mirantis/cicd/mysql:2019.2.6"
     # jenkins:2.150.3
-    docker_image_jenkins: "${_param:mcp_docker_registry}/mirantis/cicd/jenkins:2019.2.5"
+    docker_image_jenkins: "${_param:mcp_docker_registry}/mirantis/cicd/jenkins:2019.2.8"
     docker_image_jenkins_jnlp_slave: "${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:2019.2.8"
     # TODO: fix tag
     docker_image_jenkins_ssh_slave: "${_param:mcp_docker_registry}/mirantis/cicd/ssh-slave:2019.2.5"
