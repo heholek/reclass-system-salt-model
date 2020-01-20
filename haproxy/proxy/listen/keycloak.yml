@@ -17,7 +17,7 @@ parameters:
           mode: http
           options:
             - forwardfor
-            - httpchk
+            - httpchk get /auth
             - httpclose
             - httplog
           balance: source
