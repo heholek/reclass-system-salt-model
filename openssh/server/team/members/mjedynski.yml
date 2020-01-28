@@ -1,0 +1,19 @@
+parameters:
+  linux:
+    system:
+      user:
+        mjedynski:
+          enabled: true
+          name: mjedynski
+          sudo: ${_param:linux_system_user_sudo}
+          full_name: Marcin Jedynski
+          home: /home/mjedynski
+          email: mjedynski@mirantis.com
+  openssh:
+    server:
+      user:
+        mjedynski:
+          enabled: true
+          public_keys:
+            - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5SMq7zeEUtz82NRDqA2LXYRz4y3dVFWniuqXFtRcd0DrYTaI2eQ8RTXudhQ5tPpzrVWC7Nmn5qsvOSOMb4nOdlAJydBqecW7U0vpH0FQaxCHW2iD2pgpVhozC28ievX/vhKCEE0qUGC/v7GTxDBrVd99WTt92IotbThndodbMx5GcpVyiNh5Jo04eeZr+1GZ93BfcJTGei48tvzNgyYcrXEEqKEwe4C55SSnLj0SNVKMBoaw9mV3dcZh2NzMAennlsuFJcgzsxNkEn+bQE0WVdFMfREowQ63NoTiCxqZIicy6wcxyReW4llGPfXSGNvX1GmmQHMJEHaSSha9nh+41 mjedynski@mirantis.com
+          user: ${linux:system:user:mjedynski}
