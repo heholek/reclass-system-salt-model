@@ -25,8 +25,8 @@ parameters:
     infra_kvm_node07_deploy_address: ${_param:infra_kvm_node07_address}
     infra_kvm_node08_deploy_address: ${_param:infra_kvm_node08_address}
     infra_kvm_node09_deploy_address: ${_param:infra_kvm_node09_address}
-    infra_kvm_node10_deploy_address: ${_param:infra_kvm_node09_address}
-    infra_kvm_node11_deploy_address: ${_param:infra_kvm_node10_address}
+    infra_kvm_node10_deploy_address: ${_param:infra_kvm_node10_address}
+    infra_kvm_node11_deploy_address: ${_param:infra_kvm_node11_address}
     infra_kvm_node12_deploy_address: ${_param:infra_kvm_node12_address}
     infra_kvm_node13_deploy_address: ${_param:infra_kvm_node13_address}
     infra_kvm_node14_deploy_address: ${_param:infra_kvm_node14_address}
