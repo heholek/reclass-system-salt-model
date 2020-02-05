@@ -47,7 +47,7 @@ parameters:
     docker_image_keycloak_server: "${_param:mcp_docker_registry}/mirantis/external/jboss/keycloak:4.5.0.Final"
     docker_image_keycloak_proxy: "${_param:mcp_docker_registry}/mirantis/external/jboss/keycloak:3.4.2.Final"
     # CVP
-    docker_image_cvp_sanity_checks: "${_param:mcp_docker_registry}/mirantis/cvp/cvp-sanity-checks:2019.2.7"
+    docker_image_cvp_sanity_checks: "${_param:mcp_docker_registry}/mirantis/cvp/cvp-sanity-checks:2019.2.8"
     docker_image_cvp_tempest: "${_param:mcp_docker_registry}/mirantis/cicd/ci-tempest:${_param:openstack_version}"
     docker_image_cvp_shaker_checks: "${_param:mcp_docker_registry}/mirantis/cvp/cvp-shaker:2019.2.3"
     docker_image_cvp_rally: "${_param:mcp_docker_registry}/mirantis/cvp/cvp-rally:2019.2.5"
@@ -173,7 +173,7 @@ parameters:
           name: cvp-shaker:2019.2.3
         - registry: ${_param:mcp_docker_registry}/mirantis/cvp
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cvp
-          name: cvp-sanity-checks:2019.2.7
+          name: cvp-sanity-checks:2019.2.8
         - registry: ${_param:mcp_docker_registry}/mirantis/external/xrally
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external/xrally
           name: xrally-openstack:0.11.2
