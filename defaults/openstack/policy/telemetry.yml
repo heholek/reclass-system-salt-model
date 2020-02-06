@@ -1,0 +1,6 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  ceilometer:
+    server:
+      policy: ${_param:telemetry_default_policy_${_param:openstack_version}}
