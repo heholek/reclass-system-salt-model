@@ -1,3 +1,5 @@
+classes:
+- system.defaults.openstack.policy.all
 parameters:
   horizon:
     server:
@@ -9,6 +11,5 @@ parameters:
       policy:
         octavia:
           enabled: true
-          name: octavia_policy.json
-          source: file
-
+          source: pillar
+          pillar: ${_param:octavia_default_policy_${_param:openstack_version}}

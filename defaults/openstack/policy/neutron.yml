@@ -1,0 +1,6 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  neutron:
+    server:
+      policy: ${_param:neutron_default_policy_${_param:openstack_version}}
