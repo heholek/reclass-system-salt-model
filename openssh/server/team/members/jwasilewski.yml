@@ -1,0 +1,19 @@
+parameters:
+  linux:
+    system:
+      user:
+        jwasilewski:
+          enabled: true
+          name: jwasilewski
+          sudo: ${_param:linux_system_user_sudo}
+          full_name: Jan Wasilewski
+          home: /home/jwasilewski
+          email: jwasilewski@mirantis.com
+  openssh:
+    server:
+      user:
+        jwasilewski:
+          enabled: true
+          public_keys:
+            - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRwoT1Odn+YrV0QQEy6GATYrzpMOPZyupFmGEP8oaSWSDWEwfu5+ae7M0D+ruFLfX/Gt4rBROgueqv7dJxxZoFtCxYaYpQv4Lx7xRmjsGXqwMR35GBZFpo2XuayzW0dkdIqL6kVmqRQeM5aUKYpNLHpJzaQivm0DihFhnrOn/KSKhwk1E0EETQhmkjDDTi2unDRLP31naBWXZS52uYaj9RpA97VlC3M2jaKTVg4WhyClDDhrdydEsCYHSkO7bLyaAFlFV+ZG4y8pkCIUHs5RtriYjElgaCGjXPJQ1DoYpg7OHMgfXDGq6Ot1x/ADFfKL35UYoyMHz9vc+KZk/tIPg5 jwasilewski@MacBook-Pro-jwasilewski.local
+          user: ${linux:system:user:jwasilewski}
