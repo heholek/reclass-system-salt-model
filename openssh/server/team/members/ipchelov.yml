@@ -1,0 +1,19 @@
+parameters:
+  linux:
+    system:
+      user:
+        ipchelov:
+          email: ipchelov@mirantis.com
+          enabled: true
+          full_name: "Ilia Pchelov"
+          home: /home/ipchelov
+          name: ipchelov
+          sudo: ${_param:linux_system_user_sudo}
+  openssh:
+    server:
+      user:
+        ipchelov:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/ZnTQyh+Yb95mX6Kqkm8+olpbGgmu4nDORsk1fgkcwYkbIjHlHwFRKvpauSZ0aI1y6/HskV1Im/koGDitpZk7MOqrx5bQXAl7ak8nyWqk4rFytZiLAd2KUBOcg/LraQ0XXq9RB8tw4eTY6EFnX18/fR4IU/6ntU12/IR/sBy0FTTlNXpIG9SmMuGShPYWU4P2R75JA7ZX0mGD8yZRSGMdTNyGf+5JQ9DwQ8itbkVV9gLOmDzgTHQEfcDwiWIhRXSUqMaPI6iXM9bbtW+i0Ks+lOEL2GYoAA4+NLiSatZ4ow4PEOSaPyUYnLJ2TED9xh2Ij7Qi7zz1l7WCigDPX6PR ipchelov@mirantis.com
+          user: ${linux:system:user:ipchelov}
