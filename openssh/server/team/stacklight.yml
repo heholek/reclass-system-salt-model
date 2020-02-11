@@ -9,6 +9,7 @@ classes:
 - system.openssh.server.team.members.deprecated.rpromyshlennikov
 - system.openssh.server.team.members.deprecated.spasquier
 - system.openssh.server.team.members.dkalashnik
+- system.openssh.server.team.members.ipchelov
 - system.openssh.server.team.members.isvetlov
 - system.openssh.server.team.members.kdziekonski
 - system.openssh.server.team.members.mkobus
