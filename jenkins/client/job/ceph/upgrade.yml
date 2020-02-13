@@ -6,7 +6,7 @@ parameters:
           type: workflow-scm
           concurrent: true
           display_name: "Ceph - upgrade"
-          description: "Jewel-Luminous upgrade job"
+          description: "Ceph upgrade job"
           discard:
             build:
               keep_num: 50
@@ -36,16 +36,16 @@ parameters:
               description: Wait for healthy during pipeline
             CLUSTER_FLAGS:
               type: string
-              default: 'sortbitwise,noout'
+              default: 'noout'
               description: Flags to be aplied before pipeline and after pipeline (comma-separated list)
             ORIGIN_RELEASE:
               type: string
               description: Ceph release version before upgrade
-              default: 'jewel'
+              default: 'luminous'
             TARGET_RELEASE:
               type: string
               description: Ceph release version after upgrade
-              default: 'luminous'
+              default: 'nautilus'
             STAGE_UPGRADE_MON:
               type: boolean
               default: 'true'
