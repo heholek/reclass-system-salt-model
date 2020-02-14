@@ -18,6 +18,8 @@ parameters:
       command_timeout: 10
       opts:
         gather_job_timeout: 40
+        sock_pool_size: 40
+        zmq_backlog: 3000
       peer:
         '.*':
           - x509.sign_remote_certificate
