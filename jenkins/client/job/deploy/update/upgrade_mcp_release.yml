@@ -53,6 +53,10 @@ parameters:
                 UPDATE_PIPELINES: true
                 # Use only when local repositories are present
                 UPDATE_LOCAL_REPOS: false
+                # Run apt-get upgrade on Drivetrain nodes
+                OS_UPGRADE: false
+                # Run apt-get dist-upgrade on Drivetrain nodes and reboot to apply changes
+                OS_DIST_UPGRADE: false
                 # Next parameters added only for test purposes and not enabled by default
                 # RECLASS_SYSTEM_BRANCH: ''
             PIPELINE_TIMEOUT:
