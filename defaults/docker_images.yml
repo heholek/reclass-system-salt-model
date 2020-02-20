@@ -96,16 +96,25 @@ parameters:
 
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: jnlp-slave:2019.2.6
+          name: jnlp-slave:2019.2.8
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
           name: ssh-slave:2019.2.5
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: jenkins:2019.2.5
+          name: jenkins:2019.2.8
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
           name: gerrit:2019.2.7
+        - registry: ${_param:mcp_docker_registry}/mirantis/external/cockroach
+          target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external/cockroach
+          name: cockroach:v2.1.1
+        - registry: ${_param:mcp_docker_registry}/mirantis/external/jboss
+          target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external/jboss
+          name: keycloak:4.5.0.Final
+        - registry: ${_param:mcp_docker_registry}/mirantis/external/jboss
+          target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external/jboss
+          name: keycloak:3.4.2.Final
           # stacklight
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
