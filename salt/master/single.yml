@@ -17,8 +17,8 @@ parameters:
       max_open_files: 15000
       command_timeout: 10
       opts:
-        gather_job_timeout: 40
-        sock_pool_size: 40
+        gather_job_timeout: 100
+        sock_pool_size: 15
         zmq_backlog: 3000
       peer:
         '.*':
