@@ -21,6 +21,8 @@ parameters:
             host: ${_param:infra_config_hostname}.${_param:cluster_domain}
             port: ${_param:nginx_proxy_salt_api_proxy_port}
             protocol: ${_param:nginx_proxy_salt_api_proxy_protocol}
+            # Prevent nginx from caching request body
+            request_buffer: false
           host:
             name: ${_param:infra_config_hostname}.${_param:cluster_domain}
             port: ${_param:nginx_proxy_salt_api_site_port}
