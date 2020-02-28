@@ -20,8 +20,6 @@ parameters:
               enabled: true
               value: "$remote_addr"
           proxy:
-            size: 10240m
-            buffer_size: 10240m
             host: ${_param:nginx_proxy_radosgw_service_host}
             port: ${_param:nginx_proxy_radosgw_service_port}
             protocol: http
