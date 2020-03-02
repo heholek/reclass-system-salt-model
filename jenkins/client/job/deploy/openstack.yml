@@ -29,6 +29,10 @@ parameters:
               type: string
               default: ''
               description: 'Use batching for states, which targeted for large amount of nodes. Can be Integer or Percentage, e.g 20 or 20%'
+            DIST_UPGRADE_NODES:
+              type: boolean
+              default: 'false'
+              description: 'Whether to run "apt-get dist-upgrade" on all nodes in cluster before deployment'
             # salt master
             SALT_MASTER_CREDENTIALS:
               type: string

@@ -1,0 +1,13 @@
+classes:
+#- system.defaults.openstack.policy.barbican
+#- system.defaults.openstack.policy.bgpvpn
+- system.defaults.openstack.policy.cinder
+#- system.defaults.openstack.policy.designate
+- system.defaults.openstack.policy.glance
+- system.defaults.openstack.policy.heat
+- system.defaults.openstack.policy.keystone
+#- system.defaults.openstack.policy.manila
+- system.defaults.openstack.policy.neutron
+- system.defaults.openstack.policy.nova
+#- system.defaults.openstack.policy.octavia
+#- system.defaults.openstack.policy.telemetry

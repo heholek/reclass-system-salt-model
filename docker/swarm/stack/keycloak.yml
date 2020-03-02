@@ -2,8 +2,8 @@ parameters:
   _param:
     docker_keycloak_server_replicas: 1
     docker_keycloak_proxy_replicas: 1
-    keycloak_bind_port: ${_param:haproxy_keycloak_bind_port}
-    keycloak_proxy_bind_port: ${_param:haproxy_keycloak_proxy_bind_port}
+    keycloak_bind_port: 8080
+    keycloak_proxy_bind_port: 9990
     # Initial admin support
     keycloak_admin_username: admin
   docker:
@@ -34,7 +34,7 @@ parameters:
               ports:
                 - ${_param:haproxy_keycloak_proxy_exposed_port}:${_param:keycloak_proxy_bind_port}
               volumes:
-                - /srv/volumes/keycloak/proxy/proxy.json:/opt/jboss/conf/proxy.json
+                - /srv/volumes/keycloak/proxy:/opt/jboss/conf
           network:
             default:
               external:

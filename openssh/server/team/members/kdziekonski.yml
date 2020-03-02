@@ -1,0 +1,19 @@
+parameters:
+  linux:
+    system:
+      user:
+        kdziekonski:
+          email: kdziekonski@mirantis.com
+          enabled: true
+          full_name: "Ksawery Dzieko\u0144ski"
+          home: /home/kdziekonski
+          name: kdziekonski
+          sudo: ${_param:linux_system_user_sudo}
+  openssh:
+    server:
+      user:
+        kdziekonski:
+          enabled: true
+          public_keys:
+          - key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAEAQDam5sPh3j+1eRpVi9uHkLBmnXteJfM8utPDw10Ml8iLZJBa9SvI3QkHkXYnbEzhLCPSL+39CQgdLdp2zAwS0mnqEjAganpeQpy2xlrwNFBjFw/VUX511gISBLXmFe5iAFh8CJCAC2wu8fawKe6ckJriHMLT1NxoAivO41tVj/gf0CEDQOzgm0V716MEltjas/NBG3AUO6FDg979oVruAkqhS1JqJdb+xOIkIZf9cB6OiTG2SjihS7n57iIHvudoBRKK9k3odpsphPtFe4iC0PCDBazL5eCrqV1LAlcLJlP5yPCQvR77Chy/kr+ajtzjV0mzQVNlRreg2gPwPp+uxRSHmuBe+rlKXL93HrHlK1oSj3V8bW8Zk48f0ob1iC31M9tYxaHgch1IqX4zTDYLfDuXnQiSIO449qcXI1WUr2gQwDEMWXcJZvXfKbcGYba1CyhtzfTwEDosyPr3Ywmd9UWgdo/u5ygf4Gg9t8zbbn1M/HrxLhuF1pD1fgL+w/XaFylPRTqsVT8nOxm03H5KSYF8agjogHdxp/47Waurojf1fUhIT+7FyhFG2kEwG+SJUb7PLyZHlge4Nko+vFN/F+5pUQnd9+wbJC3KkJYG+mDJWI3FxX5YtSs09Yl0HOqVGVdzKKHJ/YaygNze+vOP8YmsWxefW9Dzy/9RSu5WPo95+4IkWaQDUh5xPJz6UrVw1JthEaI8wWJEAhOVWFKjvjU2XWZngqlYUQeQVzAnJRJkOENHx48Q7owKLzCI6SLgz4WiNMdVOiDuhP7khOqBygTCtzT68EvLayfiAOSFs14QUdhp7UlRFHNKmIqnzYa2rHHHEGE7flPAKFE0Z/0E3w1uHu229Jo44t6ts4h22/quQ9FREp9DU5uHpU9E+CUirwD+YjuUFjd048Fbag7P/BryTTpwuw3oUjj/74OxhNeDtseowve+uMLiobVZMM5wtsEfyWdxYyi1U6kJOpb/PdCvOqR9AlGDIj/qsT7+kLUhanZq6wEGb+frX86ZIHcIu93O/5aBYL4hB863dK4+hKTlT54EHqXUSEf6deEtcyMSFBD4xG/hQYsOUg1+f9Qo0jZ/nLIraO8kcj4CicEBUgXDCGA2z3u4anjJgVZz6xBhtKz8AxumnNdAmSIBzbzle5fuVopLvtDXQlfU9HybaFUk3pv+s9ICu6u+LYTc8FByXOqAwUXRIyVsTZ7sevKWFbqewVn3XNVdSimxHJ0BU3I83uumdhSI4IK+XpjzstcvHFCraQu9T7K0v5Flz1IGhcX50l8Xjrfd4s56GH7lAf2Ip8hJXN9QZK71kCh+wJKH2yiiicgJCGYmVPfRIjk+Oiu7zp53NlqgS5Jq5IPFMYJ
+          user: ${linux:system:user:kdziekonski}

@@ -1,0 +1,30 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  horizon:
+    server:
+      policy:
+        compute:
+          source: pillar
+          pillar: ${_param:nova_default_policy_${_param:openstack_version}}
+          enabled: true
+        identity:
+          source: pillar
+          pillar: ${_param:keystone_default_policy_${_param:openstack_version}}
+          enabled: true
+        image:
+          source: pillar
+          pillar: ${_param:glance_default_policy_${_param:openstack_version}}
+          enabled: true
+        network:
+          source: pillar
+          pillar: ${_param:neutron_default_policy_${_param:openstack_version}}
+          enabled: true
+        orchestration:
+          source: pillar
+          pillar: ${_param:heat_default_policy_${_param:openstack_version}}
+          enabled: true
+        volume:
+          source: pillar
+          pillar: ${_param:cinder_default_policy_${_param:openstack_version}}
+          enabled: true

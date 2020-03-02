@@ -11,6 +11,10 @@ parameters:
             host: ${_param:stacklight_monitor_address}
             port: 5601
             protocol: http
+            buffer:
+              size: 16
+              number: 8
+              busy: 32
           host:
             name: ${_param:cluster_public_host}
             port: 5601

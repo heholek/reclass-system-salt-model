@@ -1,0 +1,6 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  neutron:
+    server:
+      bgpvpn_policy: ${_param:bgppvn_default_policy_${_param:openstack_version}}

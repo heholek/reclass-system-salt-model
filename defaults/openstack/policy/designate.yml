@@ -1,0 +1,6 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  designate:
+    server:
+      policy: ${_param:designate_default_policy_${_param:openstack_version}}
