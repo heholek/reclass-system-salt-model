@@ -23,6 +23,7 @@ parameters:
             protocol: ${_param:nginx_proxy_salt_api_proxy_protocol}
             # Prevent nginx from caching request body
             request_buffer: false
+            timeout: 1800
           host:
             name: ${_param:infra_config_hostname}.${_param:cluster_domain}
             port: ${_param:nginx_proxy_salt_api_site_port}
