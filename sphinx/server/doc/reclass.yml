@@ -3,6 +3,9 @@ classes:
 parameters:
   _param:
     nginx_static_reclass_doc_host: ${_param:cluster_public_host}
+    nginx_proxy_sphinx_user: sphinx
+    nginx_proxy_sphinx_password: ${_param:sphinx_proxy_password_generated}
+    nginx_proxy_sphinx_htpasswd_file: .htpasswd_sphinx
   sphinx:
     server:
       doc:
@@ -13,12 +16,22 @@ parameters:
             engine: reclass
   nginx:
     server:
+      user:
+        sphinx:
+          enabled: true
+          name: ${_param:nginx_proxy_sphinx_user}
+          password: ${_param:nginx_proxy_sphinx_password}
+          htpasswd: ${_param:nginx_proxy_sphinx_htpasswd_file}
       site:
         nginx_static_reclass_doc:
           enabled: true
           type: nginx_static
           name: reclass_doc
+          auth:
+            engine: basic
+            htpasswd: ${_param:nginx_proxy_sphinx_htpasswd_file}
           host:
             name: ${_param:nginx_static_reclass_doc_host}
             port: 8090
             protocol: http
+
