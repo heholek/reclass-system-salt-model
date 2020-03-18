@@ -20,7 +20,7 @@ parameters:
               keep_num: 50
             artifact:
               keep_num: 50
-          concurrent: true
+          concurrent: false
           scm:
             type: git
             url: "${_param:jenkins_gerrit_url}/mk/mk-pipelines"
