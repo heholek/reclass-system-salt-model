@@ -39,3 +39,11 @@ parameters:
               type: boolean
               default: 'true'
               description: "Set to True if upgrade for components running in Docker Swarm is desired"
+            OS_UPGRADE:
+              type: boolean
+              default: 'false'
+              description: 'Run apt-get upgrade on Stacklight nodes'
+            OS_DIST_UPGRADE:
+              type: boolean
+              default: 'false'
+              description: 'Run apt-get dist-upgrade on Stacklight nodes and reboot to apply changes'
