@@ -11,14 +11,14 @@ parameters:
     docker_image_mongodb: "${_param:mcp_docker_registry}/mirantis/external/mongo:2019.2.6"
     ###
     # phpldapadmin:0.6.12
-    docker_image_phpldapadmin: "${_param:mcp_docker_registry}/mirantis/cicd/phpldapadmin:2019.2.5"
+    docker_image_phpldapadmin: "${_param:mcp_docker_registry}/mirantis/cicd/phpldapadmin:2019.2.9"
     # gerrit:2.15.17
     docker_image_gerrit: "${_param:mcp_docker_registry}/mirantis/cicd/gerrit:2019.2.7"
     # mysql:5.6
     docker_image_mysql: "${_param:mcp_docker_registry}/mirantis/cicd/mysql:2019.2.6"
     # jenkins:2.150.3
     docker_image_jenkins: "${_param:mcp_docker_registry}/mirantis/cicd/jenkins:2019.2.8"
-    docker_image_jenkins_jnlp_slave: "${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:2019.2.8"
+    docker_image_jenkins_jnlp_slave: "${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:2019.2.9"
     # TODO: fix tag
     docker_image_jenkins_ssh_slave: "${_param:mcp_docker_registry}/mirantis/cicd/ssh-slave:2019.2.5"
     # model-generator
@@ -82,7 +82,7 @@ parameters:
           name: postgres:9.6.10
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: phpldapadmin:2019.2.5
+          name: phpldapadmin:2019.2.9
 
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
@@ -96,7 +96,7 @@ parameters:
 
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: jnlp-slave:2019.2.8
+          name: jnlp-slave:2019.2.9
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
           name: ssh-slave:2019.2.5
