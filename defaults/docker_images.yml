@@ -33,7 +33,7 @@ parameters:
     docker_image_grafana: "${_param:mcp_docker_registry}/openstack-docker/grafana:2019.2.6"
     docker_image_prometheus_es_exporter: "${_param:mcp_docker_registry}/openstack-docker/prometheus-es-exporter:2019.2.6"
     docker_image_prometheus: "${_param:mcp_docker_registry}/openstack-docker/prometheus:2019.2.6"
-    docker_image_prometheus_gainsight: "${_param:mcp_docker_registry}/openstack-docker/gainsight:2019.2.4"
+    docker_image_prometheus_gainsight: "${_param:mcp_docker_registry}/openstack-docker/sf-reporter:2019.2.9"
     docker_image_prometheus_gainsight_elasticsearch: "${_param:mcp_docker_registry}/openstack-docker/gainsight_elasticsearch:2019.2.6"
     docker_image_prometheus_relay: "${_param:mcp_docker_registry}/openstack-docker/prometheus-relay:2019.2.9"
     docker_image_pushgateway: "${_param:mcp_docker_registry}/openstack-docker/pushgateway:2019.2.6"
@@ -130,7 +130,7 @@ parameters:
           name: prometheus:2019.2.6
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
-          name: gainsight:2019.2.4
+          name: sf-reporter:2019.2.9
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
           name: telegraf:2019.2.8

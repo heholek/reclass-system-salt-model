@@ -8,3 +8,10 @@ parameters:
     # ELK stack versions
     elasticsearch_version: 5
     kibana_version: 5
+    # Salesforce
+    sf_notifier_sfdc_auth_url: "default"
+    sf_notifier_sfdc_username: "default"
+    sf_notifier_sfdc_password: "default"
+    sf_notifier_sfdc_organization_id: "default"
+    sf_notifier_sfdc_environment_id: "default"
+    sf_notifier_sfdc_sandbox_enabled: "True"
