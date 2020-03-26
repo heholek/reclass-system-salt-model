@@ -16,8 +16,8 @@ parameters:
     docker_image_gerrit: "${_param:mcp_docker_registry}/mirantis/cicd/gerrit:2019.2.7"
     # mysql:5.6
     docker_image_mysql: "${_param:mcp_docker_registry}/mirantis/cicd/mysql:2019.2.6"
-    # jenkins:2.150.3
-    docker_image_jenkins: "${_param:mcp_docker_registry}/mirantis/cicd/jenkins:2019.2.8"
+    # jenkins:2.204.3
+    docker_image_jenkins: "${_param:mcp_docker_registry}/mirantis/cicd/jenkins:2019.2.9"
     docker_image_jenkins_jnlp_slave: "${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:2019.2.9"
     # TODO: fix tag
     docker_image_jenkins_ssh_slave: "${_param:mcp_docker_registry}/mirantis/cicd/ssh-slave:2019.2.5"
@@ -102,7 +102,7 @@ parameters:
           name: ssh-slave:2019.2.5
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: jenkins:2019.2.8
+          name: jenkins:2019.2.9
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
           name: gerrit:2019.2.7
