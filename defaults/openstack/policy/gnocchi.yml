@@ -1,0 +1,6 @@
+classes:
+- system.defaults.openstack.policy.all
+parameters:
+  gnocchi:
+    server:
+      policy: ${_param:gnocchi_default_policy_${_param:openstack_version}}
