@@ -54,9 +54,9 @@ parameters:
     docker_image_cvp_xrally: "${_param:mcp_docker_registry}/mirantis/external/xrally/xrally-openstack:0.11.2"
     # aptly
     docker_image_aptly:
-      base: "${_param:mcp_docker_registry}/mirantis/cicd/aptly:2019.2.6"
-      public: "${_param:mcp_docker_registry}/mirantis/cicd/aptly-public:2019.2.6"
-      publisher: "${_param:mcp_docker_registry}/mirantis/cicd/aptly-publisher:2019.2.6"
+      base: "${_param:mcp_docker_registry}/mirantis/cicd/aptly:2019.2.9"
+      public: "${_param:mcp_docker_registry}/mirantis/cicd/aptly-public:2019.2.9"
+      publisher: "${_param:mcp_docker_registry}/mirantis/cicd/aptly-publisher:2019.2.9"
 
     # List of images, to be placed into offline image, during separate image build process
     # WARNING: registry|target_registry and names - must be exactly same as list above!
@@ -86,13 +86,13 @@ parameters:
 
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: aptly:2019.2.6
+          name: aptly:2019.2.9
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: aptly-public:2019.2.6
+          name: aptly-public:2019.2.9
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: aptly-publisher:2019.2.6
+          name: aptly-publisher:2019.2.9
 
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
