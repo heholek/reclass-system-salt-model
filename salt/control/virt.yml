@@ -5,6 +5,7 @@ parameters:
     control:
       enabled: True
       virt_enabled: True
+      file_mask: 022
   virt:
     nic:
       default:
