@@ -1,2 +1,7 @@
 classes:
   - service.prometheus.alerta
+parameters:
+  prometheus:
+    alerta:
+      timeouts:
+        alert: 28800
