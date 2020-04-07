@@ -13,6 +13,7 @@ parameters:
     # Per repo modificators
     mirror_mirantis_com_cassandra_xenial_force: False
     mirror_mirantis_com_ceph_luminous_xenial_force: False
+    mirror_mirantis_com_ceph_nautilus_xenial_force: False
     mirror_mirantis_com_docker_xenial_force: False
     mirror_mirantis_com_elasticsearch_5_x_xenial_force: False
     mirror_mirantis_com_elasticsearch_6_x_xenial_force: False
