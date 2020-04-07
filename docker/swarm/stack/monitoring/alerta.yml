@@ -24,6 +24,7 @@ parameters:
                 - 15017:8080
               volumes:
                 - ${prometheus:alerta:config_dir}/alerta.conf:/web/config.js
+                - ${prometheus:alerta:config_dir}/alertad.conf:/app/alertad.conf
               environment:
                 ADMIN_USERS: ${_param:alerta_admin_username}
                 ADMIN_PASSWORD: ${_param:alerta_admin_password}
