@@ -3,6 +3,7 @@ classes:
 - system.debmirror.mirror_mirantis_com.update.cassandra.xenial
 - system.debmirror.mirror_mirantis_com.ceph-luminous.xenial
 - system.debmirror.mirror_mirantis_com.update.ceph-luminous.xenial
+- system.debmirror.mirror_mirantis_com.update.ceph-nautilus.xenial
 - system.debmirror.mirror_mirantis_com.docker.xenial
 - system.debmirror.mirror_mirantis_com.update.docker.xenial
 - system.debmirror.mirror_mirantis_com.elasticsearch-5.x.xenial
