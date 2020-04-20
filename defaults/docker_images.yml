@@ -20,7 +20,7 @@ parameters:
     docker_image_jenkins: "${_param:mcp_docker_registry}/mirantis/cicd/jenkins:2019.2.9"
     docker_image_jenkins_jnlp_slave: "${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:2019.2.9"
     # TODO: fix tag
-    docker_image_jenkins_ssh_slave: "${_param:mcp_docker_registry}/mirantis/cicd/ssh-slave:2019.2.5"
+    docker_image_jenkins_ssh_slave: "{_param:mcp_docker_registry}/mirantis/cicd/ssh-slave:2019.2.10"
     # model-generator
     docker_image_operations_api: "${_param:mcp_docker_registry}/mirantis/model-generator/operations-api:2019.2.6"
     docker_image_operations_ui: "${_param:mcp_docker_registry}/mirantis/model-generator/operations-ui:2019.2.6"
@@ -99,7 +99,7 @@ parameters:
           name: jnlp-slave:2019.2.9
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: ssh-slave:2019.2.5
+          name: ssh-slave:2019.2.10
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
           name: jenkins:2019.2.9
