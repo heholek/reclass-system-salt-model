@@ -5,6 +5,13 @@ parameters:
   _param:
     maas_admin_username: mirantis
     maas_region_main_archive: ${_param:linux_system_repo_update_url}/ubuntu/
+  # Pin distro-info-data package. See PROD-34940 for details
+  linux:
+    system:
+      package:
+        distro-info-data:
+          version: 0.28ubuntu0.9
+          hold: true
   maas:
     cluster:
       enabled: true

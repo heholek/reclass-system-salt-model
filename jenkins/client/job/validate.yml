@@ -21,6 +21,8 @@ parameters:
             artifact:
               keep_num: 50
           concurrent: false
+          disabled: true
+          description: "Pipeline is outdated and no longer supported. Please do not use in production"
           scm:
             type: git
             url: "${_param:jenkins_gerrit_url}/mk/mk-pipelines"

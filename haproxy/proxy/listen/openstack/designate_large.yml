@@ -24,3 +24,11 @@ parameters:
             host: ${_param:cluster_node03_address}
             port: ${_param:haproxy_designate_port}
             params: ${_param:haproxy_designate_check_params}
+          - name: ${_param:cluster_node04_hostname}
+            host: ${_param:cluster_node04_address}
+            port: ${_param:haproxy_designate_port}
+            params: ${_param:haproxy_designate_check_params}
+          - name: ${_param:cluster_node05_hostname}
+            host: ${_param:cluster_node05_address}
+            port: ${_param:haproxy_designate_port}
+            params: ${_param:haproxy_designate_check_params}
