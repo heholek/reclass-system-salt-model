@@ -33,6 +33,10 @@ parameters:
               type: boolean
               default: 'false'
               description: 'Whether to run "apt-get dist-upgrade" on all nodes in cluster before deployment'
+            UPGRADE_SALTSTACK:
+              type: boolean
+              default: 'false'
+              description: 'Whether to install recent available saltstack packages'
             # salt master
             SALT_MASTER_CREDENTIALS:
               type: string
