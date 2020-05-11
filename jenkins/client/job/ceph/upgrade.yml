@@ -78,3 +78,8 @@ parameters:
               type: string
               default: '/root'
               description: Select the target dir to backup to when BACKUP_ENABLED
+            RUNHIGHSTATE:
+              type: boolean
+              default: 'false'
+              description: Run HighStates on target nodes after upgrade
+

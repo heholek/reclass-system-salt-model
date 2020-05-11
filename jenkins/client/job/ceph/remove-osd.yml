@@ -43,3 +43,8 @@ parameters:
               type: boolean
               default: 'true'
               description: Wait for healthy during pipeline
+            CLEANDISK:
+              type: boolean
+              default: 'false'
+              description: Clean data/block partitions
+
