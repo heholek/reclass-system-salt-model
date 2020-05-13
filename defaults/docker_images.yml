@@ -12,10 +12,10 @@ parameters:
     ###
     # phpldapadmin:0.6.12
     docker_image_phpldapadmin: "${_param:mcp_docker_registry}/mirantis/cicd/phpldapadmin:2019.2.9"
-    # gerrit:2.15.17
-    docker_image_gerrit: "${_param:mcp_docker_registry}/mirantis/cicd/gerrit:2019.2.7"
-    # mysql:5.6
-    docker_image_mysql: "${_param:mcp_docker_registry}/mirantis/cicd/mysql:2019.2.6"
+    # gerrit:2.15.18
+    docker_image_gerrit: "${_param:mcp_docker_registry}/mirantis/cicd/gerrit:2019.2.10"
+    # mysql:5.6.48
+    docker_image_mysql: "${_param:mcp_docker_registry}/mirantis/cicd/mysql:2019.2.10"
     # jenkins:2.204.3
     docker_image_jenkins: "${_param:mcp_docker_registry}/mirantis/cicd/jenkins:2019.2.9"
     docker_image_jenkins_jnlp_slave: "${_param:mcp_docker_registry}/mirantis/cicd/jnlp-slave:2019.2.9"
@@ -105,7 +105,7 @@ parameters:
           name: jenkins:2019.2.9
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: gerrit:2019.2.7
+          name: gerrit:2019.2.10
         - registry: ${_param:mcp_docker_registry}/mirantis/external/cockroach
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external/cockroach
           name: cockroach:v2.1.1
@@ -189,7 +189,7 @@ parameters:
           #
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: mysql:2019.2.6
+          name: mysql:2019.2.10
         - registry: ${_param:mcp_docker_registry}/mirantis/external
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/external
           name: mongo:2019.2.6
