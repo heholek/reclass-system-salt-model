@@ -12,9 +12,9 @@ parameters:
     ###
     # phpldapadmin:0.6.12
     docker_image_phpldapadmin: "${_param:mcp_docker_registry}/mirantis/cicd/phpldapadmin:${_param:mcp_version}"
-    # gerrit:2.15.17
+    # gerrit:2.15.18
     docker_image_gerrit: "${_param:mcp_docker_registry}/mirantis/cicd/gerrit:${_param:mcp_version}"
-    # mysql:5.6
+    # mysql:5.6.48
     docker_image_mysql: "${_param:mcp_docker_registry}/mirantis/cicd/mysql:${_param:mcp_version}"
     # jenkins:2.150.3
     docker_image_jenkins: "${_param:mcp_docker_registry}/mirantis/cicd/jenkins:${_param:mcp_version}"
@@ -105,7 +105,7 @@ parameters:
           name: jenkins:2019.2.5
         - registry: ${_param:mcp_docker_registry}/mirantis/cicd
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/mirantis/cicd
-          name: gerrit:2019.2.7
+          name: gerrit:2019.2.10
           # stacklight
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
