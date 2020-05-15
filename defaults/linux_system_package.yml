@@ -1,0 +1,6 @@
+parameters:
+  linux:
+    system:
+      package:
+        popularity-contest:
+          version: purged
