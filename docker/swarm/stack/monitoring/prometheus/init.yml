@@ -8,6 +8,7 @@ parameters:
     prometheus_storage_local_engine: "persisted"
     prometheus_storage_heap_size: 3221225472
     prometheus_storage_num_fingerprint_mutexes: 4096
+    prometheus_cors_origin: '.*'
   docker:
     client:
       stack:
@@ -46,3 +47,4 @@ parameters:
                 PROMETHEUS_STORAGE_LOCAL_ENGINE: ${_param:prometheus_storage_local_engine}
                 PROMETHEUS_STORAGE_LOCAL_TARGET_HEAP_SIZE: ${_param:prometheus_storage_heap_size}
                 PROMETHEUS_STORAGE_LOCAL_NUM_FINGERPRINT_MUTEXES: ${_param:prometheus_storage_num_fingerprint_mutexes}
+                PROMETHEUS_CORS_ORIGIN_REGEX: "${_param:prometheus_cors_origin}"
