@@ -31,6 +31,7 @@ classes:
 - system.debmirror.mirror_mirantis_com.update.salt-formulas.xenial
 - system.debmirror.mirror_mirantis_com.saltstack-2017.7.xenial
 - system.debmirror.mirror_mirantis_com.update.saltstack-2017.7.xenial
+- system.debmirror.mirror_mirantis_com.update.salt-2017.7.8.xenial
 - system.debmirror.mirror_mirantis_com.td-agent.xenial
 - system.debmirror.mirror_mirantis_com.update.td-agent.xenial
 - system.debmirror.mirror_mirantis_com.ubuntu.xenial
