@@ -30,5 +30,6 @@ parameters:
     mirror_mirantis_com_salt-formulas_xenial_force: True
     mirror_mirantis_com_saltstack_2016_3_xenial_force: False
     mirror_mirantis_com_saltstack_2017_7_xenial_force: False
+    mirror_mirantis_com_salt_2017_7_8_xenial_force: False
     mirror_mirantis_com_td_agent_xenial_force: False
     mirror_mirantis_com_ubuntu_xenial_force: False
