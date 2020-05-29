@@ -101,8 +101,8 @@ parameters:
             25: "--exclude='/libbluetooth*'"
             26: "--exclude='/libandroid*'"
             27: "--exclude='/banshee*'"
-            27: "--exclude='/*(.xorg)*joystick'"
-            28: "--exclude='/xserver-xorg-video(.*vivid|.*wily|.*utopic)'"
+            28: "--exclude='/*(.xorg)*joystick'"
+            29: "--exclude='/xserver-xorg-video(.*vivid|.*wily|.*utopic)'"
             30: --exclude='universe.*bluez.*'
             32: --exclude='main/(a/a11y-profile-manager|e/emacs24|i/ispell|br\.ispell)'
             33: --exclude='/universe/.*(alsa|ubuntuone|telepathy|debian-multimedia|kodi|mediaplayer|nagios|getfem|gammaray|geotranz|brasero)'
@@ -190,3 +190,4 @@ parameters:
             810: --include='universe/p/plexus-(container-default|interactivity-api)/' # PROD-26807 Req.for DogTag
             811: --include='/main/u/update-notifier/' #   PROD-30102 Req for ceph
             812: --include='/main/k/krb5/' # Req for curl
+            813: --include='universe/g/glibc/' # PROD-XXXXX Req for rabbitmq 3.8.2
