@@ -138,10 +138,12 @@ parameters:
             306: '--exclude="main/l/linux.*/linux-.*4\.10\.0-(([0-3][0-9])|(4[0-1]))"'
             # Hwe 4.13: Old - if minor in 0-39, < 44
             307: '--exclude="main/l/linux.*/linux-.*4\.13\.0-(([0-3][0-9])|(4[0-4]))"'
-            # Hwe 4.15.0: Old - if minor in 0-39, < 43
-            308: --exclude='main/l/linux.*/linux-.*4\.15\.0-(([0-3][0-9])|(4[0-2]))'
+            # Hwe 4.15.0: Old - < 100
+            308: --exclude='main/l/linux.*/linux-.*4\.15\.0-(\d\d)-'
             # Old 4.4.0
             309: --exclude='main/l/linux.*/linux-.*4\.4\.0-'
+            # Hwe 4.15.0: include >= 100
+            310: --include='main/l/linux.*/linux-.*4\.15\.0-(\d\d\d)-'
             # List of packages, that should be fetched from fresh ppa or other mirror
             # So,removing them from upstream mirror.
             500: --exclude='main/m/maas/'
@@ -190,4 +192,4 @@ parameters:
             810: --include='universe/p/plexus-(container-default|interactivity-api)/' # PROD-26807 Req.for DogTag
             811: --include='/main/u/update-notifier/' #   PROD-30102 Req for ceph
             812: --include='/main/k/krb5/' # Req for curl
-            813: --include='universe/g/glibc/' # PROD-XXXXX Req for rabbitmq 3.8.2
+            813: --include='universe/g/glibc/' # PROD-35417 Req for rabbitmq 3.8.2
