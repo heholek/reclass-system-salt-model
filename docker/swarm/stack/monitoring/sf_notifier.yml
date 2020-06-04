@@ -2,7 +2,7 @@ classes:
 - system.prometheus.sf_notifier.container
 parameters:
   _param:
-    sf_notifier_workers: 4
+    sf_notifier_workers: 8
     sf_notifier_buffer_size: 32768
     sf_notifier_alert_id_hash_func: sha256
   docker:
