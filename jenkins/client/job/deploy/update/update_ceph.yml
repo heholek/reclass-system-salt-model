@@ -33,3 +33,8 @@ parameters:
               type: string
               default: ''
               description: Flags to be aplied before pipeline and after pipeline (comma-separated list)
+            RUNHIGHSTATE:
+              type: boolean
+              default: 'false'
+              description: Run HighStates on target nodes after upgrade
+
