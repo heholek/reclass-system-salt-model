@@ -193,3 +193,5 @@ parameters:
             811: --include='/main/u/update-notifier/' #   PROD-30102 Req for ceph
             812: --include='/main/k/krb5/' # Req for curl
             813: --include='universe/g/glibc/' # PROD-35417 Req for rabbitmq 3.8.2
+            814: --include='universe/o/opensaml2' # PROD-35464 Req for SAML2/Federation
+            815: --include='universe/x/xmltooling' # PROD-35464 Req for SAML2/Federation
