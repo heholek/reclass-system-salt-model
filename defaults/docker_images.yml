@@ -37,7 +37,7 @@ parameters:
     docker_image_prometheus_gainsight_elasticsearch: "${_param:mcp_docker_registry}/openstack-docker/gainsight_elasticsearch:2019.2.6"
     docker_image_prometheus_relay: "${_param:mcp_docker_registry}/openstack-docker/prometheus-relay:2019.2.10"
     docker_image_pushgateway: "${_param:mcp_docker_registry}/openstack-docker/pushgateway:2019.2.6"
-    docker_image_remote_agent: "${_param:mcp_docker_registry}/openstack-docker/telegraf:2019.2.9"
+    docker_image_remote_agent: "${_param:mcp_docker_registry}/openstack-docker/telegraf:2019.2.10"
     docker_image_remote_collector: "${_param:mcp_docker_registry}/openstack-docker/heka:2019.2.6"
     docker_image_remote_storage_adapter: "${_param:mcp_docker_registry}/openstack-docker/remote_storage_adapter:2019.2.6"
     docker_image_sf_notifier: "${_param:mcp_docker_registry}/openstack-docker/sf_notifier:2019.2.4"
@@ -133,7 +133,7 @@ parameters:
           name: sf-reporter:2019.2.9
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
-          name: telegraf:2019.2.9
+          name: telegraf:2019.2.10
         - registry: ${_param:mcp_docker_registry}/openstack-docker
           target_registry: ${_param:default_local_mirrror_content:docker_client_registry_target_registry}/openstack-docker
           name: remote_storage_adapter:2019.2.6
