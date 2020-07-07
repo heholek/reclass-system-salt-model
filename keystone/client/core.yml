@@ -38,6 +38,7 @@ parameters:
                   options: ${_param:openstack_service_user_options}
         admin_identity:
           admin:
+            api_version: ''
             user: admin
             password: ${_param:keystone_admin_password}
             project: admin
