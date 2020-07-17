@@ -39,12 +39,12 @@ parameters:
                 - ${prometheus:gainsight:dir:config}:${_param:gainsight_config_directory}
                 - ${prometheus:gainsight:dir:crontab}:${_param:gainsight_crontab_directory}
               environment:
-                - CLUSTER_ID='${_param:gainsight_cluster_id}'
-                - PROMETHEUS_URL='${_param:gainsight_prometheus_url}'
-                - CONFIG_PATH='${_param:gainsight_config_path}'
-                - SFDC_AUTH_URL='${_param:gainsight_sfdc_auth_url}'
-                - SFDC_USERNAME='${_param:gainsight_sfdc_username}'
-                - SFDC_PASSWORD='${_param:gainsight_sfdc_password}'
-                - SFDC_ORGANIZATION_ID='${_param:gainsight_sfdc_organization_id}'
-                - SFDC_ENVIRONMENT_ID='${_param:gainsight_sfdc_environment_id}'
-                - SFDC_SANDBOX_ENABLED='${_param:gainsight_sfdc_sandbox_enabled}'
+                CLUSTER_ID: ${_param:gainsight_cluster_id}
+                PROMETHEUS_URL: ${_param:gainsight_prometheus_url}
+                CONFIG_PATH: ${_param:gainsight_config_path}
+                SFDC_AUTH_URL: ${_param:gainsight_sfdc_auth_url}
+                SFDC_USERNAME: ${_param:gainsight_sfdc_username}
+                SFDC_PASSWORD: ${_param:gainsight_sfdc_password}
+                SFDC_ORGANIZATION_ID: ${_param:gainsight_sfdc_organization_id}
+                SFDC_ENVIRONMENT_ID: ${_param:gainsight_sfdc_environment_id}
+                SFDC_SANDBOX_ENABLED: ${_param:gainsight_sfdc_sandbox_enabled}

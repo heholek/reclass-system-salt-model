@@ -26,12 +26,14 @@ parameters:
               "aggs": {
                 "program": {
                   "terms": {
-                    "field": "programname.keyword"
+                    "field": "programname.keyword",
+                    "size": 10000
                   },
                   "aggs": {
                     "host": {
                       "terms": {
-                        "field": "Hostname.keyword"
+                        "field": "Hostname.keyword",
+                        "size": 10000
                       }
                     }
                   }

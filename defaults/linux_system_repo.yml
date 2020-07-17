@@ -39,7 +39,7 @@ parameters:
     linux_system_repo_hotfix_mcp_percona_url: ${_param:linux_system_repo_hotfix_url}/percona/
     #
     linux_system_repo_mcp_saltstack_url: ${_param:linux_system_repo_url}/saltstack-${_param:linux_system_repo_mcp_saltstack_version_number}/
-    linux_system_repo_update_mcp_saltstack_url: ${_param:linux_system_repo_update_url}/saltstack-${_param:linux_system_repo_mcp_saltstack_version_number}/
+    linux_system_repo_update_mcp_saltstack_url: ${_param:linux_system_repo_update_url}/salt-2017.7.8/
     linux_system_repo_hotfix_mcp_saltstack_url: ${_param:linux_system_repo_hotfix_url}/saltstack-${_param:linux_system_repo_mcp_saltstack_version_number}/
     #
     linux_system_repo_mcp_extra_url: ${_param:linux_system_repo_url}/extra/

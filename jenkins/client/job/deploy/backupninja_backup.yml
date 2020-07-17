@@ -34,5 +34,5 @@ parameters:
               default: 'true'
           trigger:
             timer:
-              enabled: true
+              enabled: false
               spec: "${_param:backup_min} ${_param:backup_hour} ${_param:backup_day_of_month} ${_param:backup_month} ${_param:backup_day_of_week}"
